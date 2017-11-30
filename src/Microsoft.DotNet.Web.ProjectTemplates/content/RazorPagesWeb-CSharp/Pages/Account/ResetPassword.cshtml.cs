@@ -45,7 +45,7 @@ namespace Company.WebApplication1.Pages.Account
         {
             if (code == null)
             {
-                throw new ApplicationException("A code must be supplied for password reset.");
+                throw new ArgumentNullException(code, "A code must be supplied for password reset.");
             }
             else
             {
